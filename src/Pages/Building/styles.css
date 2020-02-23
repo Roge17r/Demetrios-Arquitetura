@@ -1,0 +1,64 @@
+@import 'https://fonts.googleapis.com/css?family=Lexend+Zetta|Major+Mono+Display&display=swap';
+@import'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap';
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Lexend Zetta';
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    border-bottom: 1px solid #333;  
+    }
+.links {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.links a {
+    margin-top: 70px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+.material-icons {
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 60px;
+}
+.modal{
+    background-color: rgba(0,0,0,0.1);
+    width: 300px;
+    height: 410px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.modal .pages {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+    margin-right: 100%;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.modal.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
