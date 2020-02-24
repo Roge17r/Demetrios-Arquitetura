@@ -8,3 +8,18 @@ const menu = document.querySelector('.open-modal')
     document.querySelector('.modal').addEventListener("click", function () {
     modal.classList.remove('active')
     })
+/** Script modal-house **/
+
+const overlay = document.querySelector('.modal-overlay')
+
+const cards = document.querySelectorAll('.card')
+
+for(let card of cards){
+    card.addEventListener("click", function() {
+        overlay.classList.add('active')
+    })
+}
+
+document.querySelector('.close-modal').addEventListener("click", function () {
+    overlay.classList.remove('active')
+    })

@@ -8,15 +8,16 @@
 
 body {
     font-family: 'Lexend Zetta';
-    width: 1500px;
     margin: 0 auto;
     position: relative;
+    align-items: flex-start;
+    flex-direction: row;
 }
-
 header {
-    border-bottom: 1px solid #333;  
+    border-bottom: 1px solid #333; 
     }
 .links {
+    margin-left: 10px;
     display: grid;
     grid-template-columns:1fr 1fr;
 }
@@ -53,7 +54,7 @@ header {
     margin-right: 100%;
     margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 24px;
 }
 
@@ -61,4 +62,94 @@ header {
     opacity: 1;
     visibility: visible;
     transition: 0.5s;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    gap: 1px 5px;   
+}
+@media (max-width: 1500px){
+    .cards {
+        grid-template-columns: 1fr 1fr
+    }
+}
+@media (max-width: 1000px){
+    .cards {
+        grid-template-columns: 1fr
+    }
+}
+
+.card{
+    position: relative;
+}
+.card img{
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.card img:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+.card p {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-overlay {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.modal-overlay .modal-house {
+    background-color: white;
+    width: 1500px;
+    height: 800px;
+    margin: 5vh auto;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal-house img {
+   position: absolute;
+   width: 90%;
+   height: 90%;
+   margin-left: 75px;
+   margin-top: 40px;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+.before {
+    position: absolute;
+    left: 65px;
+    height: 100px;
+    top: 40%;
+    opacity: 0.2;
+}
+
+.next {
+    position: absolute;
+    right: 8px;
+    top: 40%;
+    opacity: 0.2;
+}
+.close-modal {
+    position: absolute;
+    right: 1px;
+    top: -55px;
+    opacity: 0.2;
 }

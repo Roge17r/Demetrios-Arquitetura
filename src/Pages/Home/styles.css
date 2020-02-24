@@ -8,15 +8,17 @@
 
 body {
     font-family: 'Lexend Zetta';
-    width: 1500px;
     margin: 0 auto;
     position: relative;
+    align-items: flex-start;
+    flex-direction: row;
 }
-
 header {
-    border-bottom: 1px solid #333;  
+    border-bottom: 1px solid #333;
+ 
     }
 .links {
+    margin-left: 10px;
     display: grid;
     grid-template-columns:1fr 1fr;
 }
@@ -53,7 +55,7 @@ header {
     margin-right: 100%;
     margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 24px;
 }
 
@@ -61,4 +63,28 @@ header {
     opacity: 1;
     visibility: visible;
     transition: 0.5s;
+}
+.card{
+    position: relative;
+}
+.card img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+.card img:hover {
+    filter: grayscale(0);
+    transition: 0.75s
+}
+.card p {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+.card .ind {
+    font-weight: bold;
+    color: black;
 }
