@@ -12,10 +12,18 @@ body {
     position: relative;
     align-items: flex-start;
     flex-direction: row;
+    background-color: #333;
 }
 header {
     border-bottom: 1px solid #333; 
+    font-family: 'Major Mono Display';
+    border: 4px solid #333;
     }
+header{
+    border-color: rgb(243, 240, 240);
+    transition: 0.75s;
+}
+
 .links {
     margin-left: 10px;
     display: grid;
@@ -23,29 +31,31 @@ header {
 }
 
 .links a {
-    margin-top: 70px;
+    margin-top: 30px;
+    padding: 20px;
     font-size: 30px;
-    color: black;
+    color: rgb(243, 240, 240);
     text-decoration: none;
+    
 }
-.material-icons {
+.open-modal i {
     font-size: 50px;
     cursor: pointer;
     position: absolute;
-    right: 5px;
-    top: 60px;
+    right: 10px;
+    top: 40px;
+    color: rgb(243, 240, 240);
 }
 .modal{
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.9);
     width: 300px;
-    height: 410px;
+    height: 590px;
     text-align: right;
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 42px;
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s;
 }
 .modal .pages {
     display: grid;
@@ -54,7 +64,7 @@ header {
     margin-right: 100%;
     margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 24px;
 }
 
@@ -62,4 +72,102 @@ header {
     opacity: 1;
     visibility: visible;
     transition: 0.5s;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:1fr ;
+    gap: 1px 5px;   
+}
+@media (max-width: 1500px){
+    .cards {
+        grid-template-columns: 1fr 
+    }
+}
+@media (max-width: 1000px){
+    .cards {
+        grid-template-columns: 1fr
+    }
+}
+
+.card{
+    position: relative;
+}
+.card img{
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.card img:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+.card p {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.modal-overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.modal-overlay .modal-house {
+    background-color: rgb(31, 30, 30);
+    width: 1500px;
+    height: 1200px;
+    margin: 3vh auto;
+    border-radius: 8px;
+    position: relative;
+    max-width: 100%;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+}
+
+.close-modal #close-modal1 {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color: white;
+    opacity: 0.2;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+
+iframe {
+    width:90%;
+    height: 90%;
+    /* position: absolute; */
+    margin: 3% 5%;
+}
+
+@media (max-width:1000px){
+    .close-modal #close-modal1{
+        font-size: 24px;
+        }
+    iframe{
+        right: 0px;
+        top: auto;
+    }
+    .modal-overlay .modal-house{
+        height: 700px;
+    }
+    
 }
