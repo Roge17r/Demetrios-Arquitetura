@@ -163,13 +163,16 @@ iframe {
 
 @media (max-width:1000px){
     .close-modal #close-modal1{
-        font-size: 24px;
+        font-size: 40px;
+        margin-right: 5px;
         }
     iframe{
         right: 0px;
         top: auto;
+        margin-top: 30px;
     }
     .modal-overlay .modal-house{
+        
         height: 700px;
     }
     
