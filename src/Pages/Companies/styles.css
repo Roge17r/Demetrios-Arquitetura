@@ -122,7 +122,7 @@ header {
 }
 
 .modal-overlay .modal-house {
-    background-color: rgb(31, 30, 30);
+    background-color: rgba(31, 30, 30,0.5);
     width: 1500px;
     height: 1200px;
     margin: 3vh auto;
@@ -135,6 +135,7 @@ header {
     visibility: visible;
     opacity: 1;
     position: fixed;
+    transition: 1.5s;
 }
 
 .close-modal #close-modal1 {
