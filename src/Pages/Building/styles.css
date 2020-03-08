@@ -42,7 +42,7 @@ header {
     color: rgb(243, 240, 240);
 }
 .modal{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.9);
     width: 300px;
     height: 590px;
     text-align: right;
