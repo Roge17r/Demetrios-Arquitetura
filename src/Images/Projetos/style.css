@@ -146,7 +146,7 @@ header {
 .container {
  width: 1600px 100%;
  height: 900px;
- margin: 20px 60px;
+ margin: 10px 60px;
  position: relative;
  /* margin-left: 100px; */
 }
@@ -242,7 +242,7 @@ header {
 
 .active,
 .demo:hover {
-  border: 2px solid white;
+  border: 3px solid rgb(18, 190, 233);
   display: block;
   animation: linear;
 }
@@ -255,8 +255,8 @@ header {
     cursor: pointer;
 }
 #fullScreen:hover{
-    color: black;
-    transition: 0s;
+    transform: scale(1.5);
+    transition: 300ms;
 }
 
 #exit{
@@ -267,6 +267,10 @@ header {
   top: 20px;
   cursor: pointer;
   visibility: hidden;
+}
+#exit:hover{
+  transform: scale(0.85);
+  transition: 300ms;
 }
 
 :-webkit-full-screen {
@@ -296,15 +300,17 @@ header {
   :fullscreen .prev{
     position: absolute;
     left: 0;
+    top: 50%;
   }
   :fullscreen .next{
     position: absolute;
     right: 0;
+    top: 50%;
   }
 
   :fullscreen .row{
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
     margin-bottom: 0;
   }
   :fullscreen #fullScreen{
