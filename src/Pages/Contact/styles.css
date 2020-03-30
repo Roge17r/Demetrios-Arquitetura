@@ -122,3 +122,87 @@ header {
         top: 5px;
     }
 }
+
+#box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;    
+    color: white;
+}
+
+.container0{
+    background-color: rgba(255, 255, 255, 0.03);
+    width: 98%;
+    height: 500px;
+    border-left: 3px solid white;
+}
+.info{
+    text-align: center;
+    margin-bottom: 12px;
+}
+.container1{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    width: 98%;
+    height: 500px;
+    border-left: 3px solid white;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+.container0 p {
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.container1 a img{
+    width: 40px;
+    height: 40px;
+    padding: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    
+}
+.container1 div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    /* border: 2px solid white; */
+    margin: 10px auto;
+    transition: 300ms;
+}
+
+.container1 .boxes {
+    width: 300px;
+    border-radius: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    background-color: transparent;
+    border: transparent;
+}
+
+.container1 .whats:hover{
+    background-color:#00E676;
+    transition: 300ms;
+    transform: scale(1.1);
+}
+
+.container1 .linkedin:hover{
+    background-color:#0077B5;
+    transition: 300ms;
+    transform: scale(1.1);
+}
+
+.container1 .instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    transition: 300ms;
+    transform: scale(1.1);
+}
+
+.container1 .facebook:hover{
+    background:#4267B2 ;
+    transition: 300ms;
+    transform: scale(1.1);
+}
