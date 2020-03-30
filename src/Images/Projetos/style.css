@@ -56,7 +56,7 @@ header {
         height: 100px;
     }
     .container .prev,.container .next{
-      top: 28%;
+      -webkit-transform: translate(0,-130%);
     }
 }
 
@@ -189,13 +189,12 @@ header {
 .prev{
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 52%;
   width: auto;
   padding: 16px;
   color: white;
   font-size: 20px;
   left: 0px;
-  
 }
 
 /* Position the "next button" to the right */
@@ -203,12 +202,11 @@ header {
   right: 0;
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 52%;
   width: auto;
   padding: 16px;
   color: white;
   font-size: 20px;
-  -webkit-user-select: none;
 }
 
 
@@ -301,11 +299,13 @@ header {
     position: absolute;
     left: 0;
     top: 50%;
+    -webkit-transform: translate(0,-50%);
   }
   :fullscreen .next{
     position: absolute;
     right: 0;
     top: 50%;
+    -webkit-transform: translate(0,-50%);
   }
 
   :fullscreen .row{
