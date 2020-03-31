@@ -161,32 +161,39 @@ header {
         color: rgb(243, 240, 240);
         z-index: 1;
     }
-
-    .open-modal i:hover{
-        color: black;
-        background-color: white;
+    .close-modal i {
+        font-size: 40px;
+        cursor: pointer;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        color: red;
+        z-index: 1;
     }
+
+    
     .modal{
-        background-color: rgba(0,0,0,0.9);
-        width: 220px;
-        height: 280px;
+        background-color: rgba(0,0,0);
+        width: 0px;
+        height: 100%;
         position: fixed;
         right: 0px;
         top: 10px;
         opacity: 0;
         visibility: hidden;
         z-index: 1;
+        transition: 0.5s;
     }
     .modal .pages {
         display: grid;
         grid-template-rows: 1fr;
-        margin-top: 20px;
+        margin-top: 50px;
         margin-right: 100%;
         margin-left: 20px;
         text-decoration: none;
         color: white;
-        font-size: 14px;
-        visibility: visible;
+        font-size: 24px;
+        visibility:visible;
         position: relative;
         text-transform: uppercase;
     }
@@ -197,6 +204,7 @@ header {
         transition: 0.5s;
         position: fixed;
         border: rgba(0,0,0,0.9);
+        width: 220px;
     }
 
     .links a {
@@ -210,6 +218,7 @@ header {
         position: absolute;
         top: 5px;
     }
+
     .overlay{
         opacity: 1;
     }
