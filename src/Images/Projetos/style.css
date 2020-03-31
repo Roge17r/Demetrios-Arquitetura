@@ -66,72 +66,80 @@ header {
     
     }
     header{
-        margin-top: 0px;
-        line-height: 40px;
-        margin-bottom: 100px;
-    }
-    .links {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-    }
-    .open-modal i {
-        font-size: 50px;
-        cursor: pointer;
-        position: fixed;
-        right: 10px;
-        top: 15px;
-        color: rgb(243, 240, 240);
-        z-index: 1;
-    }
+      margin-top: 0px;
+      line-height: 40px;
+      margin-bottom: 100px;
+  }
+  .links {
+      display: grid;
+      grid-template-columns:1fr 1fr;
+  }
+  .open-modal i {
+      font-size: 50px;
+      cursor: pointer;
+      position: fixed;
+      right: 10px;
+      top: 15px;
+      color: rgb(243, 240, 240);
+      z-index: 1;
+  }
+  .close-modal i {
+      font-size: 40px;
+      cursor: pointer;
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      color: red;
+      z-index: 1;
+  }
 
-    .open-modal i:hover{
-        color: black;
-        background-color: white;
-    }
-    .modal{
-        background-color: rgba(0,0,0,0.9);
-        width: 220px;
-        height: 280px;
-        position: fixed;
-        right: 0px;
-        top: 10px;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 1;
-    }
-    .modal .pages {
-        display: grid;
-        grid-template-rows: 1fr;
-        margin-top: 20px;
-        margin-right: 100%;
-        margin-left: 20px;
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
-        visibility: visible;
-        position: relative;
-        text-transform: uppercase;
-    }
-    
-    .modal.active{
-        opacity: 1;
-        visibility: visible;
-        transition: 0.5s;
-        position: fixed;
-        border: rgba(0,0,0,0.9);
-    }
+  
+  .modal{
+      background-color: rgba(0,0,0);
+      width: 0px;
+      height: 100%;
+      position: fixed;
+      right: 0px;
+      top: 10px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1;
+      transition: 0.5s;
+  }
+  .modal .pages {
+      display: grid;
+      grid-template-rows: 1fr;
+      margin-top: 50px;
+      margin-right: 100%;
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      visibility:visible;
+      position: relative;
+      text-transform: uppercase;
+  }
+  
+  .modal.active{
+      opacity: 1;
+      visibility: visible;
+      transition: 0.5s;
+      position: fixed;
+      border: rgba(0,0,0,0.9);
+      width: 220px;
+  }
 
-    .links a {
-        visibility: hidden;
-        position: absolute;
-    }
+  .links a {
+      visibility: hidden;
+      position: absolute;
+  }
 
-    .links a strong {
-        visibility: visible;
-        color: white;
-        position: absolute;
-        top: 5px;
-    }
+  .links a strong {
+      visibility: visible;
+      color: white;
+      position: absolute;
+      top: 5px;
+  }
     .container .prev,.container .next{
       top: 40%;
     }
