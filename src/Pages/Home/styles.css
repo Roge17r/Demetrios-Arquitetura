@@ -13,13 +13,14 @@ body {
     align-items: flex-start;
     flex-direction: row;
     background-color: black;
+    margin-bottom: -350px;
 }
 header {
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 100px;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 30px;
     }
 
 .dalmata{
@@ -38,13 +39,12 @@ header {
     top: -100px;
 }
 .links a {
-    margin-top: 30px;
-    padding: 5px;
+    margin-top: 40px;
+    padding: 4px;
     font-size: 100%;
     color: rgb(243, 240, 240);
     text-decoration: none;
     margin: 0 10px;
-    top: 0;
 }
 
 .links a:hover{
@@ -93,10 +93,14 @@ header {
     opacity: 0;
 }
 
-.modal .pages{
+.modal{
     visibility: hidden;
     position: absolute;
     top: 1px;
+}
+.open-modal{
+    position: absolute;
+    top: 0;
 }
 
 @media (max-width:1000px){

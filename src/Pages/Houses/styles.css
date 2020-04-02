@@ -99,10 +99,14 @@ header {
     text-transform: uppercase;
 }
 
-.modal .pages{
+.modal{
     visibility: hidden;
     position: absolute;
     top: 1px;
+}
+.open-modal{
+    position: absolute;
+    top: 0;
 }
 @media (max-width: 2500px){
         .card{
