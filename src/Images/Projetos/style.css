@@ -334,6 +334,7 @@ header {
     margin-top: 100px;
     width: 500px;
     max-width: 100%;
+    visibility: hidden;
 }
 .lorem p {
     padding: 20px;
