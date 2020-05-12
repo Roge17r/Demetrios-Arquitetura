@@ -17,7 +17,7 @@ body {
 }
 header {
     font-family: 'Roboto Condensed', sans-serif;
-    line-height: 100px;
+    line-height: 90px;
     position: fixed;
     z-index: 1;
     top: 30px;
@@ -36,7 +36,6 @@ header {
 }
 .links a strong{
     margin-right: 90px;
-    top: -100px;
 }
 .links a {
     margin-top: 40px;
@@ -54,7 +53,7 @@ header {
 
 .card{
     height: 300px;
-    background-color: ivory;
+    background-color: black;
     border-bottom: 5px solid black;
     position: relative;
     

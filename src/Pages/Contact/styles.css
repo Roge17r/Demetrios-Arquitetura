@@ -16,10 +16,10 @@ body {
 }
 header {
     font-family: 'Roboto Condensed', sans-serif;
-    line-height: 100px;
+    line-height: 90px;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 30px;
     }
 
 
@@ -136,6 +136,7 @@ header {
 }
 
 #box{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 100px;    
